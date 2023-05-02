@@ -6,5 +6,6 @@ root = pathlib.Path(__file__).parent.resolve()
 if __name__ == "__main__":
     readme = root / "README.md"
     now = datetime.datetime.utcnow()
-    md = f"Hello there. Today is {now.strftime('%B %d, %Y')} (UTC)"
-    readme.open("w").write(md)
+    md1 = f"[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)"
+    #md2 = f"Today is {now.strftime('%B %d, %Y')} (UTC), and it's {}"
+    readme.open("w").write(md1)
